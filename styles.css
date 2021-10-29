@@ -60,12 +60,14 @@ body {
   border: none;
   margin: 20px;
   padding: 10;
-  width: 150
+  width: 150;
+  margin-right: 100
 }
 
 .cookpot {
   width: 100;
   height: auto;
+  padding-left: 55;
 }
 
 span {
@@ -81,4 +83,8 @@ span {
 .radio-toolbar {
   display: inline-block;
   align-items: vertical;
+}
+
+.hidden {
+  visibility: hidden;
 }

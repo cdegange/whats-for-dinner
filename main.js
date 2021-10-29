@@ -1,74 +1,95 @@
 var sides = [
-  Miso Glazed Carrots
-Coleslaw
-Garden Salad
-Crispy Potatoes
-Sweet Potato Tots
-Coconut Rice
-Caeser Salad
-Shrimp Summer Rolls
-Garlic Butter Mushrooms
-Hush Puppies
+"Miso Glazed Carrots",
+"Coleslaw",
+"Garden Salad",
+"Crispy Potatoes",
+"Sweet Potato Tots",
+"Coconut Rice",
+"Caeser Salad",
+"Shrimp Summer Rolls",
+"Garlic Butter Mushrooms",
+"Hush Puppies"
 ];
 
 var mains = [
-  Spaghetti and Meatballs
-Pineapple Chicken
-Shakshuka
-Thai Yellow Curry
-Bibimbap
-Chicken Parmesean
-Butternut Squash Soup
-BBQ Chicken Burgers
-Ramen
-Empanadas
-Chicken Fried Rice
-Sheet Pan Fajitas
-Margarita Pizza
+"Spaghetti and Meatballs",
+"Pineapple Chicken",
+"Shakshuka",
+"Thai Yellow Curry",
+"Bibimbap",
+"Chicken Parmesean",
+"Butternut Squash Soup",
+"BBQ Chicken Burgers",
+"Ramen",
+"Empanadas",
+"Chicken Fried Rice",
+"Sheet Pan Fajitas",
+"Margarita Pizza"
 ];
 
 var desserts = [
-  Apple Pie
-Lemon Meringue Pie
-Black Forest Cake
-Banana Bread
-Peach Cobbler
-Cheesecake
-Funfetti Cake
-Baklava
-Flan
-Macarons
-Macaroons
-Chocolate Cupcakes
-Pavlova
-Pumpkin Pie
-Key Lime Pie
-Tart Tatin
-Croissants
-Eclairs
+"Apple Pie",
+"Lemon Meringue Pie",
+"Black Forest Cake",
+"Banana Bread",
+"Peach Cobbler",
+"Cheesecake",
+"Funfetti Cake",
+"Baklava",
+"Flan",
+"Macarons",
+"Macaroons",
+"Chocolate Cupcakes",
+"Pavlova",
+"Pumpkin Pie",
+"Key Lime Pie",
+"Tart Tatin",
+"Croissants",
+"Eclairs"
 ];
 
-var getRecipeButton = document.querySelector('.get-recipe-button');
+
 var sideButton = document.querySelector('#side');
+var mainButton = document.querySelector('#main');
+var dessertButton = document.querySelector('#dessert');
+var cookpot = document.querySelector('.cookpot');
+var outputHeading = document.querySelector('.output-header');
+var getRecipeButton = document.querySelector('#choose-recipe');
 var output = document.querySelector('.output');
 
+var chooseSide = ``;
+var chooseMain = ``;
+var chooseDessert = ``;
 
 getRecipeButton.addEventListener("click", checkId);
 
 function getRandomIndex(array) {
-  var randomNum = Math.floor(Math.random() * array.length);
+  return Math.floor(Math.random() * array.length);
 }
-var chooseSide = sides[getRandomIndex(sides)]
-var chooseMain = mains[getRandomIndex(mains)]
-var chooseDessert = desserts[getRandomIndex(desserts)]
 
 function checkId() {
-  for(var i = 0; i < array.length; i++) {
-    if(sideButton.checked) {
 
+    if(sideButton.checked) {
+      chooseSide = sides[getRandomIndex(sides)];
+      output.innerText = chooseSide;
     }
+    if(mainButton.checked) {
+      chooseMain = mains[getRandomIndex(mains)];
+      output.innerText = chooseMain;
+    }
+    if(dessertButton.checked) {
+      chooseDessert = desserts[getRandomIndex(desserts)];
+      output.innerText = chooseDessert;
+    }
+    updateDisplay();
   }
 
+
+function updateDisplay() {
+  cookpot.classList.add('hidden');
+  output.classList.remove('hidden');
+  outputHeading.classList.remove('hidden');
+}
 
 
 
