@@ -41,13 +41,6 @@ body {
   justify-content: center;
 }
 
-#cookpot-logo {
-  display: flex;
-  justify-content: center;
-  width: 75;
-  height: 75;
-}
-
 .course-selection-title {
   font-style: sans-serif;
   font-weight: bolder;
@@ -56,8 +49,8 @@ body {
 }
 
 #select-course {
+
   vertical-align: super;
-  align-content: flex-start;
   grid-row-gap: 10px;
 }
 
@@ -66,10 +59,12 @@ body {
   border-radius: 5px;
   border: none;
   margin: 20px;
+  padding: 10;
+  width: 150
 }
 
 .cookpot {
-  width: 125;
+  width: 100;
   height: auto;
 }
 
@@ -80,6 +75,7 @@ span {
 .button-style {
   border-radius: 5px;
   border: none;
+  margin-right: 20
 }
 
 .radio-toolbar {
