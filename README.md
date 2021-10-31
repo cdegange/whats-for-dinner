@@ -1,23 +1,23 @@
 # What's for Dinner?
 
+## Contributors
+
+Chad DeGange
+
+## Technologies
+
+HTML, CSS, JavaScript, Github
+
+## Instructions
+
+The project can be accessed and run via the following link:
+
+file:///Users/chaddegange/turing/module_1/projects/whats-for-dinner/index.html
+
 ## Overview
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+What's for dinner? An app designed to take the struggle out of deciding what to eat. Functionality allows you to choose from sides, main dishes or desserts. You can also utilize the entire meal function to choose one of each! Simply click the corresponding button for which meal you want and hit "Lets Cook"!
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+https://user-images.githubusercontent.com/41452531/139598747-d7484a56-98e2-41c3-b501-51c111f82bb0.png
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+https://user-images.githubusercontent.com/41452531/139598971-119bc7d0-8176-4278-aa8a-e488c5617eb0.png
