@@ -52,6 +52,7 @@ var desserts = [
 var sideButton = document.querySelector('#side');
 var mainButton = document.querySelector('#main');
 var dessertButton = document.querySelector('#dessert');
+var entireMealButton = document.querySelector('#entire_meal');
 var cookpot = document.querySelector('.cookpot');
 var outputHeading = document.querySelector('.output-header');
 var getRecipeButton = document.querySelector('#choose-recipe');
@@ -60,6 +61,7 @@ var output = document.querySelector('.output');
 var chooseSide = ``;
 var chooseMain = ``;
 var chooseDessert = ``;
+var wholeMeal = ``;
 
 getRecipeButton.addEventListener("click", checkId);
 
@@ -72,16 +74,17 @@ function checkId() {
     if(sideButton.checked) {
       chooseSide = sides[getRandomIndex(sides)];
       output.innerText = chooseSide;
-    }
-    if(mainButton.checked) {
+    } if(mainButton.checked) {
       chooseMain = mains[getRandomIndex(mains)];
       output.innerText = chooseMain;
-    }
-    if(dessertButton.checked) {
+    } if(dessertButton.checked) {
       chooseDessert = desserts[getRandomIndex(desserts)];
       output.innerText = chooseDessert;
+    } if(entireMealButton.checked) {
+      wholeMeal = `${mains[getRandomIndex(mains)]} with a side of ${sides[getRandomIndex(sides)]} and ${desserts[getRandomIndex(desserts)]}`;
+      output.innerText = wholeMeal;
     }
-    updateDisplay();
+      updateDisplay();
   }
 
 
